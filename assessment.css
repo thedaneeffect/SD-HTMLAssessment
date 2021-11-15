@@ -1,4 +1,4 @@
-body {
+html {
     background-color: rgb(15, 15, 40);
     color: lightgray;
 }
@@ -24,6 +24,7 @@ a:hover {
 }
 
 .quote {
+    position: relative;
     /* indent */
     margin-left: 2em;
     max-width: 30em;
@@ -37,6 +38,26 @@ a:hover {
     background-clip: border-box;
     background-color: rgba(100, 100, 100, 25%);
     color: rgb(184, 184, 255);
+}
+
+.quote::before {
+    content: "\201C";
+    position: absolute;
+    font-family: serif;
+    font-size: 4em;
+    left: 0em;
+    top: -0.4em;
+    opacity: 50%;
+}
+
+.quote::after {
+    content: "\201D";
+    position: absolute;
+    font-family: serif;
+    font-size: 4em;
+    right: 0em;
+    bottom: -0.8em;
+    opacity: 50%;
 }
 
 .teams thead {
