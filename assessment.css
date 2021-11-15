@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(15, 15, 40);
+    color: lightgray;
+}
+
+h1 {
+    color: rgb(255, 120, 255);
+    font-family: sans-Fserif;
+}
+
+ul {
+    list-style: square;
+}
+
+a {
+    color: rgb(255, 120, 255);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 120, 255, 50%)
+}
+
+.quote {
+    /* indent */
+    margin-left: 2em;
+    max-width: 30em;
+    /* visual indicator of quote */
+    border-left: 4px solid rgba(120, 120, 255, 50%);
+    /* give our content some room */
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    /* contents */
+    background-clip: border-box;
+    background-color: rgba(100, 100, 100, 25%);
+    color: rgb(184, 184, 255);
+}
+
+.teams thead {
+    font-weight: 700;
+    color: rgb(255, 190, 255);
+}
+
+.teams td {
+    text-align: center;
+    border: 1px solid purple;
+    padding: 0.5em;
+}
+
+#languages li {
+    list-style: square;
+    position: relative;
+}
+
+#languages li[id]::before {
+    content: '';
+    position: absolute;
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+}
+
+#java::before {
+    background-image: url(https://camo.githubusercontent.com/958f02ec7f32ca3894596e1c178d54e9168579dfe0a8b4f6d13c0f8e57c577f6/68747470733a2f2f6d6564696576616c2e736f6674776172652f696d672f746563682f6c616e672f6a6176612e706e67);
+}
+
+#go::before {
+    background-image: url(https://camo.githubusercontent.com/ac83cfb44477e50520865b6c2e877df87ed89295706cce9a04d469af43442661/68747470733a2f2f6d6564696576616c2e736f6674776172652f696d672f746563682f6c616e672f676f6c616e672e706e67);
+}

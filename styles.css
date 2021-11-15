@@ -1,8 +1,0 @@
-.push {
-    margin-left: 2em;
-    max-width: 30em;
-}
-
-.teams>tbody>tr:nth-child(2) {
-    font-weight: 700;
-}
